@@ -1,7 +1,7 @@
 # Instalaravel
 
 Exemple d'aplicació Laravel amb MySQL i Bootstrap 5.
-Ús de templates blade, login i registre amb paquet laravel/ui i Bootstrap Auth Scaffolding.
+Ús de login i registre amb paquet laravel/ui i Bootstrap Auth Scaffolding, vistes amb templates blade, models, controladors, paginació i storage.
 
 ## Requeriments
 
