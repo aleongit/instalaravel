@@ -6,3 +6,12 @@
 .dislike {
     color: black;
 }
+
+.button_del_comentari {
+    display: contents;
+    color: #0d6efd;
+}
+
+.form_inline {
+    display: inline;
+}

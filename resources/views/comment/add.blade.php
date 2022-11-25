@@ -54,18 +54,28 @@
 
                         <!--comentaris-->
                         @foreach ($imatge->comments as $comment)
-                        <p class="my-2">
+                        <div class="my-2">
                             
                             <!--comentari-->
                             <strong>{{ '@'.$comment->user->nick.': '}}</strong>
                             {{ $comment->content }}
                             {{ ' | ' . \FormatTime::LongTimeFilter($comment->created_at) }} <!--crida helper-->
 
-                            <!--link borrar, per get és perillós, potser millor fer form mètode delete amb butó -->
+                            <!--link borrar per get és perillós, fet form mètode delete amb butó i css -->
                             @if ( (Auth::id() == $comment->user_id) || (Auth::id() == $imatge->user_id) )
-                                <a href="{{ route('del-comment', $comment->id) }}"><i class="fa fa-trash"></i></a>
+                                
+                                <form 
+                                    action="{{ route('del-comment', $comment->id) }}" 
+                                    method="POST"
+                                    class="form_inline">
+                                    @csrf
+                                    @method('delete')
+                                    <button type="submit" class="button_del_comentari">
+                                        <i class="fa fa-trash"></i>
+                                    </button>
+                                </form>
                             @endif
-                        </p>
+                            </div>
                         @endforeach
                         <hr>
 

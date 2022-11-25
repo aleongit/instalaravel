@@ -117,7 +117,7 @@ Route::post('/imatge/comments/{img}', [CommentController::class, 'addComment'])
 ->where('img', '[0-9]+');
 
 //del comment
-Route::get('/imatge/comments/del/{comment}',[CommentController::class, 'delComment'])
+Route::delete('/imatge/comments/{comment}',[CommentController::class, 'delComment'])
 ->name('del-comment')
 ->where('img', '[0-9]+');
 

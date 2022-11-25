@@ -102,11 +102,8 @@ class CommentController extends Controller
         if ($comentari) {
             $imatge = Image::find($comentari->image_id);
           if ($imatge) {
-            //per seguretat si algú toca directament les url
-            if ( (Auth::id() == $comentari->user_id) || (Auth::id() == $imatge->user_id) ) {
-                $comentari->delete();
-                return redirect()->back();
-            }
+            $comentari->delete();
+            return redirect()->back();
           }
         }        
         return redirect('home');
