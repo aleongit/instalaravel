@@ -7,7 +7,7 @@
 *.php diff=php
 
 #static/* linguist-vendored
-public\css\app.css linguist-vendored
+public/css/app.css linguist-vendored
 
 /.github export-ignore
 CHANGELOG.md export-ignore
