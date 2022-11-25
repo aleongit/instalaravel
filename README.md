@@ -27,9 +27,8 @@ TODO
 - cd instalaravel
 - composer install
 - npm install && npm run dev
-- init.sql
+- run **init.sql** in MySQL
 - .env
-- php artisan key:generate
 - php artisan cache:clear
 - php artisan route:cache
 - php artisan config:clear
