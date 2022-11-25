@@ -16,7 +16,7 @@ class Image extends Model
     //mètode que retorna array amb els comentaris de l'imatge
     public function comments() {
         //return $this->hasMany($this->comment)->orderBy('id','desc');
-        return $this->hasMany(Comment::class)->orderBy('id','desc');
+        return $this->hasMany(Comment::class)->orderBy('id','asc');
     }
 
     //relació one to many
