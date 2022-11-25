@@ -1,6 +1,7 @@
 # Instalaravel
 
-TODO
+Exemple d'aplicació Laravel amb MySQL i Bootstrap 5.
+Ús de templates blade, login i registre amb paquet laravel/ui i Bootstrap Auth Scaffolding.
 
 ## Requeriments
 
@@ -21,6 +22,16 @@ TODO
 
 🖥️ npm -v
 → 8.6.0
+
+
+## For New project
+- composer create-project laravel/laravel instalaravel
+- cd instalaravel
+- composer require laravel/ui
+- php artisan ui bootstrap
+- php artisan ui bootstrap --auth
+- npm install && npm run dev
+
 
 ## Get Started
 - git clone https://github.com/aleongit/instalaravel.git
