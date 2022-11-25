@@ -33,10 +33,10 @@ TODO
 - php artisan route:cache
 - php artisan config:clear
 - php artisan view:clear
-- php artisan storage:link
+- or **php artisan optimize:clear**
+- php artisan storage:link ('storage\app' links in 'public\' )
 - php artisan serve
 - http://127.0.0.1:8000/
-- admin@gmail.com 1234
 - user: capitaenciam@gmail.com password
 - user: capitahaddock@gmail.com password
 - user: matusalem@gmail.com password
